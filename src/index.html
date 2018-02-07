@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>electron-typescript-webpack-boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+</head>
+
+<body>
+    <script>
+        var port = process.env.PORT || 8080;
+        console.log(process.env.HOT);
+        var script = process.env.HOT ? 'http://localhost:' + port + '/dist/index.js' : './index.js';
+        document.write('<script defer src="' + script + '"><\/script>');
+    </script>
+</body>
+
+</html>
